@@ -1,0 +1,17 @@
+{
+  "name": "vue-cli-test",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "szy0syz"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
