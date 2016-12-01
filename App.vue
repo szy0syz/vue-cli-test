@@ -1,28 +1,31 @@
 <template>
-  <h1>welcome app</h1>
-  <hr>
-  <h2 @click="change">{{msg}}</hr>
+	<navbar></navbar>
+	<div class="container">
+		<jumbotron></jumbotron>	
+	</div>
 </template>
 
 <script>
+  import Navbar from './components/Navbar.vue'
+  import Jumbotron   from './components/Jumbotron.vue'
 
   export default {
     data: function() {
       return {
-        msg: 'webpack...'
       }
     },
     methods: {
-    change: function() {
-        this.msg = 'changed!!!'  
-      }
+    },
+    components: {
+        'navbar': Navbar,
+        'jumbotron': Jumbotron
     }
   }
-
 </script>
 
 <style>
-  body{
-		background: #fff
-  }
+	body {
+	  min-height: 2000px;
+	  padding-top: 70px;
+	}
 </style>
